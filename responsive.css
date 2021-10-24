@@ -1,0 +1,898 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 220px) and (max-width: 411px) {
+
+    .nav-bar .nav-menu {
+        display: block;
+        position: fixed;
+        top: 54px;
+        right: -500%;
+       margin-right: 0px;
+       background-color: rgb(39, 39, 38);
+        height: 100vh;
+        width: 100%;
+        text-align: center;  
+        transition: 1s;  
+        z-index: 11111;
+    }
+    
+    .nav-bar .nav-menu li a{   
+        padding: 25px 268px;
+        margin-left: 0;    
+    }
+   
+    .nav-bar .nav-menu li a:not(.active) {
+        padding: 25px 262px;
+        
+    }
+  
+    .menu-btn i{
+        display: block;
+        width: 20%;
+        z-index: 1111111;
+        padding: 15px 35px;
+    }
+    #click:checked ~ .nav-menu{
+        right: 0;
+        
+        
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    header .top-head .search {
+        width: 400px;
+    
+    }
+    .nav-bar .logo a h2 {
+        font-size: 1.5rem;
+        
+    }
+    .nav-bar .logo a h2 span {
+        font-size: 2rem;
+      
+    }
+    .nav-bar .logo i {
+        font-size: 1.2rem;
+
+    }
+    .menu-btn i {
+        font-size: 1.5rem;
+        
+    }
+    nav .top-plus i:hover{
+        font-size: 1.3rem;
+    }
+    nav .top-plus i {
+        font-size: 1rem;
+    
+    }
+    nav .top-plus i {
+        font-size: 1rem;
+    }
+    header .top-head .search {
+        width: 200px;
+    
+    }
+    .home .home-img {
+        height: 100vh;
+      
+    }
+    .home .home-img .home-overlay {
+        height: 100vh;
+        margin-top: 35px;
+    }
+    .home .home-img .home-overlay .home-content .home-text h1 {
+        font-size: 18px;
+     
+    }
+    .home .home-img .home-overlay .home-content .home-text p {
+        font-size: 16px;
+
+    }
+    .home .home-img .home-overlay .home-content .home-text h1 span {
+        font-size: 18px;
+       
+    }
+    .home .home-img .home-overlay .home-content .home-text h1 span span {
+        font-size: 2rem;
+    
+    }
+    .def-btn a {
+        font-size: 1rem;
+   
+   }
+   
+   .home .home-img .home-overlay .home-content {
+    padding-top: 30px;
+}
+.container {
+    width: 200px;
+ 
+ }
+ .home .home-img .home-overlay .home-content .home-text {
+    margin-bottom: 15px;
+}
+.booking .book .booking-cont .booking-text {
+    width: 200px;
+   
+}
+.booking .book .booking-cont .booking-text h3 {
+    font-size: 1.3rem;
+   
+}
+.booking .book .booking-cont {
+    justify-content: space-around;
+    padding-top: 0px;
+   
+}
+.booking .book .booking-cont .booking-text p {
+    font-size: 16px;
+   
+}
+.booking .book .booking-cont .booking-form {
+    width: 200px;
+  
+}
+.booking {
+    margin-bottom: 335px;
+}
+.booking .book .booking-cont .booking-form h3 {
+    font-size: 1.1rem;
+}
+.booking-form .fildname {
+    width: 180px;
+    
+}
+.booking-form .fildemail {
+   
+    width: 180px;
+}
+.booking-form .fildnum {
+    
+    width: 180px;
+}
+.booking-form .fildcheck {
+   
+    width: 180px;
+}
+.booking-form .fildtime {
+    
+    width: 180px;
+}
+.book-btn {
+   
+    width: 180px;
+}
+
+.title h2 {
+    
+    font-size: 1.5rem;
+}
+
+.food-menu .all-food .breakfast {
+    width: 190px;
+}
+
+.food-menu .all-food .breakfast .breakfast-item { 
+    width: 180px;
+ }
+
+.food-menu .all-food .breakfast .breakfast-item .item1 {
+    height: 200px;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.food-menu .all-food .breakfast .breakfast-item .item1 .break-img img {
+    width: 100%;
+    height: 100%;
+ }
+
+.food-menu .all-food .breakfast .breakfast-item .item1 .break-img {
+    width: 60%;
+    height: 60%;
+}
+
+ .food-menu .all-food .breakfast .breakfast-item .item1 .break-cont {
+    width: 100%;
+}
+
+.food-menu .all-food {
+    justify-content: space-around;
+}
+
+.food-menu .all-food .breakfast h3 {
+    font-size: 1.5rem;
+    width: 170px;
+}
+.about .about-us .about-cont .about-img {
+    width: 200px;
+    height: 300px;
+}
+ .about .about-us .about-cont .about-text {
+    width: 180px;
+}
+.about .about-us .about-cont .about-text h3 {
+    font-size: 1.5rem;
+}
+.about .about-us .about-cont .about-text p {
+    font-size: 16px;
+ }
+.kitchen .chef1 {
+    width: 190px;
+    height: 320px;
+}
+.kitchen .chef1 .chef-img {
+    height: 240px;
+}
+ .kitchen {
+    gap: 2.5rem;
+    justify-content: space-around;
+ }
+.review .cliant {
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+ .review .cliant .cliant1 {
+    width: 200px;
+    height: 300px;
+    padding-top: 13px;
+}
+.review .cliant .cliant1 .cliant-text p {
+    font-size: 16px;
+    
+}
+.comment .feedback .feed-cont {
+ 
+    justify-content: space-around;
+    padding-top: 0px;
+   
+}
+.comment .feedback .feed-cont .feed-text {
+    width: 190px;
+
+}
+.comment .feedback .feed-cont .feed-text h3 {
+    font-size: 1.5rem;
+   
+}
+.comment .feedback .feed-cont .feed-text p {
+    font-size: 16px;
+    padding-left: 0px;
+}
+.comment .feedback .feed-cont .feed-form {
+    width: 200px;
+    
+}
+.comment .feedback .feed-cont .feed-form .feed-name {
+    width: 190px;
+   
+}
+.comment .feedback .feed-cont .feed-form .feed-email {
+    width: 190px;
+    
+}
+.comment .feedback .feed-cont .feed-form .feed-textarea { 
+    width: 190px;
+   
+}
+.comment .feedback .feed-cont .feed-form .feed-btn {
+    width: 190px;
+    margin-bottom: 20px;
+}
+.comment .feedback {
+    margin-bottom: 155px;
+}
+.make .make-theme .theme-text h2 {
+    font-size: 1.5rem;
+
+}
+.make .make-theme .theme-text a {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    
+}
+.gallery .food-gallery .gal-img {
+    justify-content: space-around;
+    
+}
+.gallery .food-gallery .gal-img img {
+    width: 200px;
+   
+}
+.blog .blog-cont {
+    justify-content: space-around;
+}
+.blog .blog-cont .blog1 {
+    width: 200px;
+    height: 370px;
+   
+}
+.blog .blog-cont .blog1 .blog-img {
+    height: 160px;
+}
+.blog .blog-cont .blog1 .blog-text .date {
+    font-size: 16px;
+   
+}
+.blog .blog-cont .blog1 .blog-text .admin {
+    font-size: 16px;
+   
+}
+.blog .blog-cont .blog1 .blog-text h3 {
+    font-size: 1rem;
+   
+}
+.blog .blog-cont .blog1 .blog-text .blog-btn a {
+    font-size: 1rem;
+  
+}
+.blog .blog-cont .blog1  .comment {
+    width: 35px;
+    height: 35px;
+    bottom: 15px;
+    right: 12px;
+    
+}
+.blog .blog-cont .blog1  .comment i {
+    font-size: 15px;
+   
+}
+.blog .blog-cont .blog1  .comment span {
+    font-size: 16px;
+    padding-left: 1px;
+   
+}
+.footer-menu .contact {
+    width: 200px;
+
+}
+.footer-cont .footer-menu {
+    justify-content: space-around;
+    padding: 5px 0;
+    
+}
+.footer-menu .contact .contact-info .info i {
+    font-size: 1.1rem;
+}
+.footer-menu .contact .contact-info .info p {
+    font-size: 16px;
+ }
+.footer-menu .open {
+    width: 200px;
+    margin-top: -30px;
+}
+.footer-menu .open .open-hr .week p {
+    font-size: 16px;
+}
+.footer-menu .open .open-hr .time p {
+    font-size: 16px;
+}
+.footer-menu .social {
+    width: 200px;
+}
+.footer-menu .social .social-cont p {
+    font-size: 16px;
+}
+.footer-menu .social .social-cont i {
+    font-size: 1.2rem;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+}
+.footer-menu .news {
+    width: 200px;
+    margin-bottom: 10px;
+}
+.footer-menu .news .news-cont p {
+    font-size: 16px;
+}
+.footer-cont .footer-menu h3 {
+    font-size: 1.5rem;
+}
+
+
+
+}
+
+
+
+/*  small devices (phones, 600px and down) */
+@media only screen and (min-width: 412px) and (max-width: 599px) {
+
+    .nav-bar .nav-menu {
+        display: block;
+        position: fixed;
+        top: 62px;
+        right: -500%;
+       margin-right: 0px;
+       background-color: rgb(39, 39, 38);
+        height: 100vh;
+        width: 100%;
+        text-align: center;  
+        transition: 1s;  
+        z-index: 11111;
+    }
+    
+    .nav-bar .nav-menu li a{   
+        padding: 25px 268px;
+        margin-left: 0;    
+    }
+   
+    .nav-bar .nav-menu li a:not(.active) {
+        padding: 25px 262px;
+        
+    }
+  
+    .menu-btn i{
+        display: block;
+        width: 20%;
+        z-index: 1111111;
+        padding: 15px 35px;
+    }
+    #click:checked ~ .nav-menu{
+        right: 0;
+        
+        
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    header .top-head .search {
+        width: 400px;
+    
+    }
+    .container {
+        width: 400px;
+
+     }
+     .home .home-img .home-overlay .home-content .home-text h1 {
+        font-size: 1.5rem;
+    
+    }
+    .home .home-img .home-overlay .home-content .home-text h1 span {
+        font-size: 2rem;
+
+    }
+    .home .home-img .home-overlay .home-content .home-text h1 span span {
+        font-size: 4rem;
+
+    }
+    .home .home-img .home-overlay .home-content .home-text {
+        margin-bottom: 25px;
+    }
+    .home .home-img .home-overlay .home-content {
+        padding-top: 50px;
+    }
+    .booking .book .booking-cont {
+        justify-content: space-around;
+        padding-top: 10px;
+        
+    }
+    .booking {
+        height: 1000px;
+    }
+    .booking .book .booking-cont .booking-text {
+        width: 380px;
+    
+    }
+    .food-menu .all-food {
+        justify-content: space-around;
+
+    }
+    .about .about-us .about-cont {
+        justify-content: space-around;
+       
+    }
+    .about .about-us .about-cont .about-img {
+        width: 400px;
+
+    }
+    .about .about-us .about-cont .about-text {
+        width: 400px;
+
+    }
+    .kitchen {
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
+    .review .cliant {
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
+    .comment .feedback .feed-cont {
+        justify-content: space-around;
+        padding-top: 0px;
+    }
+    .comment .feedback {
+        height: 500px;
+        
+    }
+    .gallery .food-gallery .gal-img {
+        justify-content: space-around;
+     
+    }
+    .gallery .food-gallery .gal-img img {
+        width: 180px;
+        height: 180px;
+
+    }
+    .blog .blog-cont {
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
+    .footer-cont .footer-menu {
+        justify-content: space-around;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px){
+
+
+    .nav-bar .nav-menu {
+        display: block;
+        position: fixed;
+        top: 62px;
+        right: -100%;
+       margin-right: 0px;
+       background-color: rgb(39, 39, 38);
+        height: 100vh;
+        width: 100%;
+        text-align: center;  
+        transition: 1s;  
+        z-index: 11111;
+    }
+    
+    .nav-bar .nav-menu li a{   
+        padding: 25px 268px;
+        margin-left: 0;    
+    }
+   
+    .nav-bar .nav-menu li a:not(.active) {
+        padding: 25px 262px;
+        
+    }
+  
+    .menu-btn i{
+        display: block;
+        width: 20%;
+        z-index: 1111111;
+        padding: 15px 35px;
+    }
+    #click:checked ~ .nav-menu{
+        right: 0;
+        
+        
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    .container {
+        width: 590px;
+     
+     }
+     .home .home-img .home-overlay .home-content .home-text h1 {
+        font-size: 2rem;
+        
+    }
+    .home .home-img .home-overlay .home-content .home-text {
+        margin-bottom: 47px;
+        margin-top: 70px;
+    }
+    .home .home-img .home-overlay .home-content {
+       
+        padding: 0 10px;
+    }
+    .booking .book {
+        height: 170vh;
+        
+    }
+    .dark-overlay {
+        height: 170vh;
+  
+    }
+    .booking .book .booking-cont .booking-text {
+        width: 580px;
+        padding: 5px 10px;
+    }
+    .booking .book .booking-cont {
+        padding-top: 0px;
+        
+    }
+    .booking .book .booking-cont .booking-form {
+        margin: auto;
+    }
+    .food-menu .all-food {
+        justify-content: space-around;
+      
+    }
+    .about .about-us .about-cont .about-img {
+        width: 580px;
+
+    }
+    .about .about-us .about-cont {
+        justify-content: space-around;
+       
+    }
+    .about .about-us .about-cont .about-text {
+        width: 580px;
+    }
+    .kitchen {
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
+    .review .cliant {
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
+    .comment .feedback {
+        height: 550px;
+       
+    }
+    .comment .feedback .feed-cont {
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    .gallery .food-gallery .gal-img {
+        justify-content: space-around;
+
+    }
+    .blog .blog-cont {
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
+    .footer-cont .footer-menu {
+        justify-content: space-around;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .container {
+        width: 760px;
+        
+     }
+     .home .home-img {
+        height: 530px;
+        
+    }
+    .home .home-img .home-overlay {
+        height: 530px;
+        
+    }
+    .home .home-img .home-overlay .home-content .home-text {
+        margin-top: 20px;
+    }
+    .dark-overlay {
+        height: 490px;
+    }
+    .booking .book .booking-cont .booking-text {
+        width: 350px;
+       
+    }
+    .booking .book .booking-cont .booking-form {
+        width: 350px;
+        margin-bottom: 135px;
+    }
+    .booking .book .booking-cont {
+        padding-top: 50px;
+        
+    }
+    .booking .book .booking-cont .booking-text p {
+        
+        font-size: 19px;
+        padding-bottom: 60px;
+    }
+    .food-menu .all-food {
+        justify-content: space-evenly;
+        
+    }
+    .about .about-us .about-cont .about-img {
+        width: 385px;
+        height: 400px;
+    }
+    .about .about-us .about-cont .about-text {
+        width: 350px;
+    
+    }
+    .about .about-us .about-cont .about-text p {
+        font-size: 18px;
+        
+    }
+    .kitchen {
+        justify-content: space-around;
+    }
+    .review .cliant {
+        justify-content: space-around;
+    }
+    .comment .feedback .feed-cont .feed-text {
+        width: 350px;
+    
+    }
+    .comment .feedback .feed-cont {
+        justify-content: space-around;
+      
+    }
+    .gallery .food-gallery .gal-img img {
+        width: 180px;
+        height: 180px;
+        
+    }
+    .gallery .food-gallery .gal-img {
+        justify-content: space-evenly;
+        gap: 0.5rem;
+    }
+    .blog .blog-cont {
+        justify-content: space-around;
+    }
+    .footer-cont .footer-menu {
+        justify-content: space-around;
+        
+    }
+
+
+}
+
+
+/* Large devices (normal laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .container {
+        width: 980px;
+        
+     }
+     .home .home-img .home-overlay .home-content .home-text {
+        margin-top: 50px;
+
+    }
+    .home .home-img .home-overlay .home-content {
+        margin-left: 20px;
+    }
+    .booking .book .booking-cont .booking-text {
+        width: 550px;
+       
+    }
+    .booking .book .booking-cont .booking-form {
+        margin-bottom: 40px;
+    }
+    .booking .book .booking-cont {
+        justify-content: space-around;
+        padding-top: 40px;
+       
+    }
+    .food-menu .all-food .breakfast {
+        width: 320px;
+        
+    }
+    .food-menu .all-food .breakfast .breakfast-item {
+        width: 300px;
+        
+    }
+    .food-menu .all-food .breakfast .breakfast-item .item1 .break-img img {
+        width: 110px;
+        height: 110px; 
+    }
+    .food-menu .all-food {
+         gap: 0.5rem;
+        
+    }
+    .about .about-us .about-cont .about-img {
+        width: 480px;
+        height: 380px;
+    }
+    .about .about-us .about-cont .about-text {
+        width: 480px;
+       
+    }
+    .about .about-us .about-cont {
+         gap: 0rem;
+         padding-bottom: 10px;
+    }
+    .kitchen {
+        justify-content: space-around;
+    }
+    .review .cliant {
+        justify-content: space-around;
+    }
+    .comment .feedback .feed-cont {
+        gap: 3.5rem;
+        justify-content: space-around;
+       
+    }
+    .gallery .food-gallery .gal-img {
+        justify-content: space-around;
+       
+    }
+    .gallery .food-gallery .gal-img img {
+        width: 175px;
+        height: 180px;
+    
+    }
+    .blog .blog-cont .blog1 {
+        width: 320px;
+        
+    }
+    .blog .blog-cont {
+        gap: 0.5rem;
+        justify-content: space-around;
+    }
+    .footer-menu .contact {
+        width: 225px;
+        
+    }
+    .footer-menu .open {
+        width: 225px;
+    
+    }
+    .footer-menu .social {
+        width: 225px;
+       
+    }
+    .footer-menu .news {
+        width: 225px;
+        
+    }
+    .footer-menu .social .social-cont i {
+        margin-left: 8px;
+        
+    }
+    .footer-cont .footer-menu {
+        gap: 0.5rem;
+        justify-content: space-around;
+        
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only (min-width: 1200px) and (max-width: 1500px) {}

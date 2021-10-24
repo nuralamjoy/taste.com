@@ -1,0 +1,1551 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    transition: all .8s linear;
+}
+
+/* ====================================
+            start defoult code
+======================================= */
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.container{
+   width: 1140px;
+   
+    margin: 0 auto;
+    
+
+}
+.def-btn{
+
+}
+.def-btn a{
+     font-size: 2rem;
+   color: #fff;
+   text-transform: capitalize;
+   font-weight: bold;
+   border: 3px solid rgb(238, 255, 0);
+   
+   border-radius: 10px;
+   padding: 8px 30px;
+   z-index: 1;
+   position: relative;
+   overflow: clip;
+}
+ .def-btn a::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgb(109, 9, 134);
+    z-index: -1;
+    
+    
+    transition: all .5s ease-in-out;
+ }
+
+.def-btn a:hover::before{
+    width: 100%;
+    left: 0;
+ }
+.title{
+    text-align: center;
+    margin: 20px 0;
+}
+.title h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-family: 'Hahmlet' serif;
+    color: #666;
+    display: inline-block;
+    position: relative;
+}
+.title h2 span{
+    color: orangered;
+}
+.title i{
+    display: block;
+    color: rgb(255, 51, 0);
+    font-size: 1.5rem;
+    
+}
+.title h2::before{
+    position: absolute;
+    bottom: -15px;
+    left: -40px;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: rgb(109, 9, 134);
+}
+.title h2::after{
+    position: absolute;
+    bottom: -15px;
+    right: -40px;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: rgb(109, 9, 134);
+}
+
+/* rev title====== */
+.rev-title{
+    text-align: center;
+    margin: 20px 0;
+}
+.rev-title h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-family: 'Hahmlet' serif;
+    color: #666;
+    display: inline-block;
+    position: relative;
+}
+.rev-title h2 span{
+    color: orangered;
+}
+.rev-title i{
+    display: block;
+    color: rgb(255, 51, 0);
+    font-size: 1.5rem;
+    
+}
+.rev-title h2::before{
+    position: absolute;
+    bottom: -15px;
+    left: -50px;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: rgb(109, 9, 134);
+}
+.rev-title h2::after{
+    position: absolute;
+    bottom: -15px;
+    right: -50px;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: rgb(109, 9, 134);
+}
+
+
+/* ====================================
+            end defoult code
+======================================= */
+
+
+
+
+
+/* ====================================
+            start top header section
+======================================= */
+header .top-head{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 0, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: -20px;
+    left: 0;
+    z-index: 111;
+    
+    transition: all .7s ease;
+}
+header .top-head .search{
+    width: 500px;
+    height: 40px;
+    background-color: blueviolet;
+    position: relative;
+   
+}
+header .top-head .search .search-text{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 0PX 80PX 0 10PX;
+    font-size: 18px;
+
+}
+.search .cancel-btn{
+    font-size: 1.2rem;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    
+}
+.search .cancel-btn i{
+    
+}
+.search-text:focus ~ .cancel-btn{
+    
+    display: block;
+}
+.search .src-btn{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 50px;
+    font-size: 1.3rem;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.search .src-btn i{
+    
+}
+/* ====================================
+            end top header section
+======================================= */
+
+
+
+/* ====================================
+            start nav bar section
+======================================= */
+nav #top-header{
+    display: none;
+}
+nav .top-plus i{
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 0px 0px 0px 10px;
+    padding: 3px 5px 5px 5px;
+    background-color: rgb(238, 255, 0);
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 111111;
+    transition: .2s;
+}
+nav .top-plus i:hover{
+    font-size: 1.5rem;
+}
+#top-header:checked ~ .top-plus i::before{
+    content: "\f068";
+}
+#top-header:checked ~ .nav-bar{
+    top: 60px;
+}
+#top-header:checked ~ .top-head{
+    top: 0;
+}
+
+nav .nav-bar{
+    width: 100%;
+    background-color: rgb(109, 9, 134);
+    border-top: 4px solid rgb(238, 255, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .7s ease;
+    z-index: 11111;
+    
+}
+.nav-bar .logo{
+    margin-left: 15px;
+    padding: 0 10px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-bar .logo a{
+  
+}
+.nav-bar .logo a h2{
+    font-family: 'Style Script', cursive;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: .1em;
+}
+.nav-bar .logo a h2 span{
+    font-family: 'Style Script', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: gold;
+}
+.nav-bar .logo i{
+    font-size: 2rem;
+    color: gold;
+    cursor: pointer;
+}
+.nav-bar .nav-menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    
+    
+}
+.nav-bar .nav-menu li{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+   
+}
+.nav-bar .nav-menu li a:not(.active){
+    font-size: 1.3rem;
+    color: rgb(238, 255, 0);
+    text-transform: capitalize;
+    padding: 0 15px;
+    z-index: 1;
+    font-weight: bold;
+}
+.active{
+    color: #fff;
+    font-size: 1.3rem;
+    
+    text-transform: capitalize;
+    padding: 0 15px;
+    z-index: 1;
+    font-weight: bold;
+}
+.nav-bar .nav-menu li:hover a{
+    
+    color: rgb(255, 255, 255);
+    
+}
+
+.nav-bar .nav-menu li::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    
+    background: linear-gradient(to right, rgba(154, 4, 255, 0.87), rgba(255, 3, 66, 0.904));
+    transition: all .5s ease-in-out;
+}
+.nav-bar .nav-menu li:hover::before{ 
+    left: 0;
+    width: 100%;
+}
+
+.menu-btn i{
+    color: white;
+    font-size: 2rem;
+    padding: 11px;
+    display: none;
+    cursor: pointer;
+}
+
+#click{
+    display: none;
+}
+
+/* ====================================
+            end nav bar section
+======================================= */
+
+
+
+/* ====================================
+            start home section
+======================================= */
+ .home{
+    z-index: 1;
+   
+}
+ .home .home-img{
+   
+    height: 100vh;
+    background-size: 100% 100%, 100% 100%;
+    background-image: url(gallery/home.jpg);
+    z-index: -111;
+    
+    
+}
+ .home .home-img .home-overlay{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-color: rgba(109, 9, 134, 0.247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .home .home-img .home-overlay .home-content{
+   
+}
+ .home .home-img .home-overlay .home-content .home-text{
+    margin-bottom: 50px;
+}
+ .home .home-img .home-overlay .home-content .home-text h1{
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+ .home .home-img .home-overlay .home-content .home-text h1 span{
+    font-size: 3rem;
+    font-family: 'Hahmlet', Style Script, cursive;
+}
+.home .home-img .home-overlay .home-content .home-text h1 span span{
+    font-size: 6rem;
+    font-family: 'Style Script', cursive; 
+    color: gold;
+}
+.home .home-img .home-overlay .home-content .home-text p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: initial;
+}
+
+
+/* ====================================
+            end home section
+======================================= */
+
+
+
+
+/* ====================================
+            start book section
+======================================= */
+.booking{
+  
+    
+}
+.booking .book{
+    width: 100%;
+    height: auto;
+    background-image: url(gallery/book.jpg);
+    background-size: 100% 100%, 100% 100%;
+   background-attachment: fixed;
+     
+}
+.dark-overlay{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+
+
+
+.booking .book .booking-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding-top: 60px;
+    
+
+} 
+
+.booking .book .booking-cont .booking-text{
+    width: 600px;
+    
+}
+.booking .book .booking-cont .booking-text h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 8px 0;
+    text-transform: capitalize;
+}
+.booking .book .booking-cont .booking-text p{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+.read-btn{
+    padding-bottom: 30px;
+}
+.booking .book .booking-cont .booking-form{
+    width: 380px;
+    background-color: rgb(92, 5, 143);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(255, 175, 3, 0.87);
+    border-radius: 4px; 
+    border: 2px solid rgb(238, 255, 0);
+    
+}
+.booking .book .booking-cont .booking-form > div{
+    margin-bottom: 10px;
+}
+.booking .book .booking-cont .booking-form h3{
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.booking-form .fildname{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    border: 2px solid rgb(238, 255, 0);
+    border-radius: 4px;
+    
+}.booking-form .fildname .name{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+   padding: 0 5px;
+   outline: none;
+   border: none;
+   font-size: 18px;
+   
+   background: transparent; 
+}
+.booking-form .fildemail{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    border: 2px solid rgb(238, 255, 0);
+    border-radius: 4px;
+}
+.booking-form .fildemail .email{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: transparent; 
+    
+}
+.booking-form .fildnum{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+     border: 2px solid rgb(238, 255, 0);
+    border-radius: 4px;
+}
+.booking-form .fildnum .num{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: transparent; 
+}
+.booking-form .fildcheck{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    border: 2px solid rgb(238, 255, 0);
+    border-radius: 4px;
+}
+.booking-form .fildcheck .checkin{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: transparent; 
+}
+.booking-form .fildtime{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    border: 2px solid rgb(238, 255, 0);
+    border-radius: 4px;
+}
+.booking-form .fildtime .time{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: transparent; 
+}
+.book-btn{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+}
+.book-btn .booking-btn{
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgb(109, 9, 134);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+.book-btn .booking-btn:hover{
+    background-color: rgb(238, 255, 0);
+    letter-spacing: .1em;
+}
+
+/* ====================================
+            end book section
+======================================= */
+
+
+
+/* ====================================
+            start foods section
+======================================= */
+
+.food-menu{
+   
+}
+.food-menu .all-food{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.food-menu .all-food .breakfast{
+    width: 350px;
+    background-color: rgb(245, 241, 237);
+    transition: all .3s;
+    box-shadow: 0 0px 15px rgb(177, 177, 177); 
+    margin-bottom: 25px;
+}
+.food-menu .all-food .breakfast:hover{
+    border:  2px  solid  rgb(109, 9, 134);
+    border-style: dashed;
+}
+.food-menu .all-food .breakfast h3{
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-family: 'Hahmlet' serif;
+    padding: 20px 0;
+    color: rgb(109, 9, 134);
+    position: relative;
+    
+
+}
+.food-menu .all-food .breakfast h3::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0;
+    
+    bottom: 15px;
+    
+    transform: scaleX(0);
+    background-color: rgb(109, 9, 134);
+    transition: all .5s ;
+}
+.food-menu .all-food .breakfast:hover.breakfast h3::before{
+    transform: scaleX(1);
+}
+.food-menu .all-food .breakfast .breakfast-item{
+    width: 320px;
+    
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.food-menu .all-food .breakfast .breakfast-item .item1{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(245, 247, 114);
+    cursor: pointer;
+    display: flex;
+   
+  
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+
+}
+.food-menu .all-food .breakfast .breakfast-item .item1 .break-img{
+    width: 40%;
+    
+
+}
+.food-menu .all-food .breakfast .breakfast-item .item1 .break-img img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+}
+.food-menu .all-food .breakfast .breakfast-item .item1 .break-cont{
+    width: 55%;
+   
+    position: relative;
+    
+}
+.food-menu .all-food .breakfast .breakfast-item .item1 .break-cont h4{
+    display: inline-block;
+    font-size: 1.3rem;
+    width: 120px;
+    
+    text-transform: capitalize;
+    color: #333;
+    transition: .5s;
+    font-weight: bold;
+    
+}
+.all-food .breakfast .breakfast-item .item1:hover .break-cont h4{
+    color: rgb(109, 9, 134);
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.all-food .breakfast .breakfast-item .item1:hover{
+    box-shadow: 0 3px 20px rgb(129, 126, 126);
+    background-color: rgb(255, 217, 5);
+}
+.food-menu .all-food .breakfast .breakfast-item .item1 .break-cont span{
+    /* margin-left: 10px; */
+    background-color: rgb(109, 9, 134);
+    padding: 6px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    
+    right: 0;
+
+}
+.food-menu .all-food .breakfast .breakfast-item .item1 .break-cont p{
+    font-size: 18px;
+    width: 170px;
+    padding-top: 10px;
+    color: rgb(97, 97, 97);
+    
+}
+.food-menu .all-food .breakfast .more-item-btn{
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.food-menu .all-food .breakfast .more-item-btn a{
+    color: rgb(109, 9, 134);
+    border-color: rgb(109, 9, 134);
+    transition: all .3s;
+}
+.food-menu .all-food .breakfast .more-item-btn a:hover{
+    color: #fff;
+    border-color: rgb(255, 217, 5);
+}
+
+/* ====================================
+            end foods section
+======================================= */
+
+
+
+/* ====================================
+            start about  section
+======================================= */
+
+.about{
+
+}
+.about .about-us{
+
+}
+.about .about-us .about-cont{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(239, 247, 218);
+    margin-bottom: 30px;
+}
+.about .about-us .about-cont .about-img{
+    width: 550px;
+    height: 340px;
+}
+.about .about-us .about-cont .about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about .about-us .about-cont .about-text{
+    width: 550px;
+   
+    padding: 10px ;
+}
+.about .about-us .about-cont .about-text h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgb(109, 9, 134);
+}
+.about .about-us .about-cont .about-text p{
+    font-size: 20px;
+    padding: 10px 0;
+    line-height: 1.5em;
+    color: #333;
+    padding-bottom: 20px;
+}
+.about .about-us .about-cont .about-text a{
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    background-color: rgb(109, 9, 134);
+    padding: 6px 8px;
+    transition: all .5s;
+    
+}
+.about .about-us .about-cont .about-text a:hover{
+    border: 2px solid rgb(109, 9, 134);
+    color: rgb(109, 9, 134);
+    background: none;
+    
+}
+
+
+/* =========servioce section========= */
+.about .about-us .service-cont{
+   
+    background-color: rgb(239, 255, 149);
+    
+}
+
+
+/* ====================================
+            end about section
+======================================= */
+
+
+
+
+/* ====================================
+            start chef section
+======================================= */
+.kitchen{
+    margin-top: 40px;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.kitchen .chef1{
+    width: 280px;
+    height: 390px;
+    border-radius: 100px 0px 8px 0px;
+    background-color: rgb(133, 10, 248);
+    box-shadow: 0 0px 30px rgb(59, 59, 59);
+    transition: all .5s;
+}
+.kitchen .chef1:hover{
+    
+    background-color: rgb(109, 9, 134);
+    
+}
+.kitchen .chef1 .chef-img{
+    width: 100%;
+    height: 300px;
+}
+.kitchen .chef1 .chef-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 0px 80px 0px;
+}
+.kitchen .chef1:hover{
+   transform: scale(1.03);
+}
+.kitchen .chef1 .chef-text{
+    text-align: center;
+   
+}
+.kitchen .chef1 .chef-text h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #fff;
+}
+.kitchen .chef1 .chef-text p{
+    font-size: 18px;
+    text-transform: capitalize;
+    
+    color: rgb(177, 169, 169);
+}
+
+
+/* ====================================
+            end chef section
+======================================= */
+
+
+
+/* ====================================
+            start cliant section
+======================================= */
+
+.review{
+    
+}
+.review .cliant{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.review .cliant .cliant1{
+    width: 280px;
+    height: 330px;
+    background-color: #333;
+    padding-top: 30px;
+    border-radius: 5px;
+    border: 2PX solid #fff;
+    box-shadow: 0 0px 30px rgb(59, 59, 59);
+    transition: all .5s;
+}
+.review .cliant .cliant1 .cliant-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+    margin: 0 auto;
+}
+.review .cliant .cliant1 .cliant-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    transition: all .5s;
+}
+.review .cliant .cliant1:hover .cliant-img img{
+    transform: scale(1.1);
+}
+.review .cliant .cliant1:hover{
+    background-color: rgb(109, 9, 134);
+}
+.review .cliant .cliant1 .cliant-text{
+    text-align: center;
+}
+.review .cliant .cliant1 .cliant-text h3{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    text-transform: uppercase;
+}
+.review .cliant .cliant1 .cliant-text i{
+    font-size: 1.3rem;
+    color: rgb(253, 183, 6);
+}
+.review .cliant .cliant1 .cliant-text p{
+    font-size: 18px;
+    color: rgb(161, 160, 160);
+    padding: 10px;
+}
+
+
+
+/* ====================================
+            end cliant section
+======================================= */
+
+
+
+
+/* ====================================
+            start feedback section
+======================================= */
+
+.comment{
+
+}
+.comment .feedback{
+    
+    width: 100%;
+    height: 400px;
+    background-image: url(gallery/feed.jpg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.comment .feedback .feed-cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    
+    padding-top: 30px;
+}
+.comment .feedback .feed-cont .feed-text{
+    width: 400px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.comment .feedback .feed-cont .feed-text h3{
+    font-size: 2rem;
+    color: rgb(255, 238, 0);
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.comment .feedback .feed-cont .feed-text p{
+    font-size: 1.2rem;
+    color: #fff;
+    padding-left: 20px;
+}
+.comment .feedback .feed-cont .feed-form{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(109, 9, 134);
+    border-radius: 4px;
+   
+    
+}
+.comment .feedback .feed-cont .feed-form h3{
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+
+.comment .feedback .feed-cont .feed-form .feed-name{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.comment .feedback .feed-cont .feed-form .feed-name .fname{
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    font-size: 18px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgb(253, 183, 6);
+    transition: all .5s;
+}
+.comment .feedback .feed-cont .feed-form .feed-email{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.comment .feedback .feed-cont .feed-form .feed-email .femail{
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    font-size: 18px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgb(253, 183, 6);
+    transition: all .5s;
+}
+.comment .feedback .feed-cont .feed-form .feed-textarea{ 
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.comment .feedback .feed-cont .feed-form .feed-textarea .textarea{ 
+    width: 100%;
+    height: 100%;
+    padding:  5px;
+    font-size: 18px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgb(253, 183, 6);
+    resize: none;
+    transition: all .5s;
+}
+.comment .feedback .feed-cont .feed-form .feed-btn{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.comment .feedback .feed-cont .feed-form .feed-btn .send{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1.7rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+    transition: all .5s;
+    border: none;
+    font-weight: bold;
+    color: rgb(109, 9, 134);
+    cursor: pointer;
+}
+.comment .feedback .feed-cont .feed-form .feed-btn .send:hover{
+    background-color: rgb(253, 183, 6);
+    letter-spacing: .1em;
+    
+}
+.focus:focus{
+    background-color: rgb(0, 247, 255);
+}
+
+/* ====================================
+            end feedback section
+======================================= */
+
+
+
+/* ====================================
+            start make theme section
+======================================= */
+.make{
+    background-color: rgb(109, 9, 134);
+    margin-bottom: 30px;
+}
+.make .make-theme{
+  
+}
+.make .make-theme .theme-text{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.make .make-theme .theme-text h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 40px 0;
+    font-family: 'Fira Sans', sans-serif;
+    
+    color: rgb(255, 238, 0);
+    
+
+}
+.make .make-theme .theme-text a{
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    padding: 8px 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all .5s;
+    font-weight: bold;
+    
+}
+.make .make-theme .theme-text a:hover{
+    color: rgb(109, 9, 134);
+    background-color: #fff;
+    letter-spacing: .1em;
+    
+}
+
+
+/* ====================================
+            end make theme section
+======================================= */
+
+
+
+/* ====================================
+           start gallery section
+======================================= */
+.gallery{
+
+}
+.gallery .food-gallery{
+    
+}
+.gallery .food-gallery .gal-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.gallery .food-gallery .gal-img img{
+    width: 205px;
+    height: 200px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.gallery .food-gallery .gal-img img:hover{
+    transform: scale(1.3);
+   
+}
+.gallery .food-gallery .view-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.gallery .food-gallery .view-btn a{
+    color: rgb(109, 9, 134);
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    padding: 8px 30px;
+    border: 2px solid rgb(109, 9, 134);
+    border-radius: 5px;
+    transition: all .5s;
+    font-weight: bold;
+}
+.gallery .food-gallery .view-btn a:hover{
+    color: #fff;
+    background-color: rgb(109, 9, 134);
+    letter-spacing: .1em;
+}
+
+
+/* ====================================
+            end gallery section
+======================================= */
+
+
+
+
+/* ====================================
+            start blog section
+======================================= */
+
+.blog{
+    margin-bottom: 40px;
+}
+.blog .blog-cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.blog .blog-cont .blog1{
+    width: 350px;
+    height: 440px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(232, 235, 235);
+    border-bottom: 6px solid rgb(163, 163, 163);
+    transition: all .5s;
+    overflow: hidden;
+} 
+.blog .blog-cont .blog1:hover{
+    border-color: rgb(109, 9, 134);
+    box-shadow: 0 0 20px #333;
+} 
+.blog .blog-cont .blog1 .blog-img{
+    width: 100%;
+    height: 200px;
+} 
+.blog .blog-cont .blog1 .blog-img img{
+    width: 100%;
+    height: 100%;
+} 
+.blog .blog-cont .blog1 .blog-text{
+    width: 100%;
+    padding: 10px;
+} 
+.blog .blog-cont .blog1 .blog-text .date{
+    display: inline;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #666;
+    margin-right: 20px;
+} 
+.blog .blog-cont .blog1 .blog-text .admin{
+    display: inline;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #666;
+} 
+.blog .blog-cont .blog1 .blog-text h3{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    padding: 10px 0;
+    color: #333;
+} 
+.blog .blog-cont .blog1 .blog-text .blog-btn{
+    padding-top: 15px;
+} 
+.blog .blog-cont .blog1 .blog-text .blog-btn a{
+    color: rgb(109, 9, 134);
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    padding: 8px 15px;
+    border: 2px solid rgb(109, 9, 134);
+    border-radius: 5px;
+    transition: all .5s;
+    font-weight: bold;
+} 
+.blog .blog-cont .blog1 .blog-text .blog-btn a:hover{
+    color: #fff;
+    background-color: rgb(109, 9, 134);
+    letter-spacing: .1em;
+}
+.blog .blog-cont .blog1  .comment{
+    background-color: rgb(214, 213, 213);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    
+} 
+.blog .blog-cont .blog1  .comment i{
+    font-size: 1rem;
+    color: rgb(158, 157, 157);
+} 
+.blog .blog-cont .blog1  .comment span{
+    font-size: 18px;
+    padding-left: 5px;
+    color: rgb(158, 157, 157);
+} 
+
+
+/* ====================================
+            end blog section
+======================================= */
+
+
+
+
+/* ====================================
+            start footer section
+======================================= */
+
+footer{
+    background-color: rgb(39, 39, 39);
+}
+.footer-cont{
+    
+    
+}
+.footer-cont .footer-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    
+    padding: 25px 0;
+    position: relative;
+}
+.footer-cont .footer-menu::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 208, 0);
+    position: absolute;
+    top: 100%;
+}
+.footer-cont .footer-menu h3{
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+.footer-menu .contact{
+    width: 260px;
+    
+   
+}
+.footer-menu .contact .contact-info{
+    
+} 
+.footer-menu .contact .contact-info .info{
+    margin-bottom: 20px;
+} 
+.footer-menu .contact .contact-info .info i{
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: rgb(109, 9, 134);
+} 
+.footer-menu .contact .contact-info .info p{
+    display: inline;
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+} 
+.footer-menu .contact .contact-info .info .gmail{
+    text-transform: lowercase;
+} 
+
+/* open hr */
+
+.footer-menu .open{
+    width: 260px;
+    
+
+}
+.footer-menu .open .open-hr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.footer-menu .open .open-hr .week{
+    
+    
+}
+.footer-menu .open .open-hr .week p{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    
+    padding: 5px 0;
+
+    
+}
+.footer-menu .open .open-hr .time{
+    
+    
+}
+.footer-menu .open .open-hr .time p{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+   
+    padding: 5px 0;
+}
+
+/* social media */
+
+.footer-menu .social{
+    width: 260px;
+    
+
+}
+.footer-menu .social .social-cont{
+    
+}
+.footer-menu .social .social-cont p{
+   font-size: 20px;
+   color: #fff;
+   margin-bottom: 20px;
+}
+.footer-menu .social .social-cont i{
+    font-size: 1.5rem;
+    color: rgb(109, 9, 134);
+    background-color: beige;
+   
+    text-align: center;
+    padding-top: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    margin-left: 17px;
+    cursor: pointer;
+   
+    transition: all .5s;
+}
+.footer-menu .social .social-cont i:hover{
+    
+    color: beige;
+    background-color: rgb(109, 9, 134);
+    transform: scale(1.1);
+}
+
+/* news letter */
+
+.footer-menu .news{
+    width: 260px;
+    
+
+}
+.footer-menu .news .news-cont{
+    
+}
+.footer-menu .news .news-cont p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer-menu .news .news-cont .email{
+    width: 100%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.footer-menu .news .news-cont .sub{
+    width: 100%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: rgb(109, 9, 134);
+}
+
+.footer-cont .credit{
+    padding: 25px 0;
+    text-align: center;
+}
+.footer-cont .credit p{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.footer-cont .credit p span{
+
+}
+.footer-cont .credit p span i{
+
+}
+.footer-cont .credit p a{
+    font-size: 1.2rem;
+    color: #ff9102;
+}
+
+/* ====================================
+            end footer section
+======================================= */
+
+
+
+
+
+
+
+
+
+
